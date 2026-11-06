@@ -19,7 +19,7 @@ jobs:
           gradle-version: '8.13'
       - name: Extract project
         run: |
-          unzip -q ReUseRefresh-2-starter.zip -d extracted
+          unzip -q ReUseRefresh-2starter.zip -d extracted
           PROJECT_DIR=$(find extracted -name settings.gradle.kts -printf '%h\n' | head -n 1)
           echo "PROJECT_DIR=$PROJECT_DIR" >> $GITHUB_ENV
       - name: Build APK
